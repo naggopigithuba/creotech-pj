@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import "./Items.css";
+import "./items.css";
 
 export default function Items() {
   // Dummy products array (you can replace with API data later)
