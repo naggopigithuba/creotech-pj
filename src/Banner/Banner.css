@@ -1,0 +1,71 @@
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.promo-left {
+  flex: 1;
+}
+
+.category {
+  color: #00ff6a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.time-box {
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 70px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.time-box p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.buy-btn {
+  background: #00ff6a;
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #00cc55;
+}
+
+.promo-right img {
+  max-width: 350px;
+}

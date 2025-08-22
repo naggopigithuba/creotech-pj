@@ -1,0 +1,140 @@
+/* Whole section background */
+.new-arrival {
+  padding: 40px;
+  background: #fff; /* full page white */
+  font-family: Arial, sans-serif;
+}
+
+.featured {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.arrival-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.right-col {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* General card styles */
+.arrival-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000; /* default black card background */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.arrival-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures full image covers the box */
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.overlay h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.overlay p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.overlay button {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 15px;
+}
+
+/* PlayStation card (left side big one) */
+.left-col .arrival-card {
+  background: #000; /* black */
+}
+
+.left-col .overlay {
+  background: #fff; /* white overlay box */
+  color: #000;
+  border-radius: 0;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.left-col .overlay button {
+  color: #ff4d4d;
+  text-decoration: underline;
+}
+
+/* Women's Collection card */
+.arrival-card.medium {
+  background: #000; /* black */
+}
+
+.arrival-card.medium .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* Perfume & Speaker cards */
+.arrival-card.small {
+  background: #000;
+  aspect-ratio: 1/1; /* make square */
+}
+
+.arrival-card.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* full image fit */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .arrival-grid {
+    grid-template-columns: 1fr;
+  }
+  .bottom-row {
+    grid-template-columns: 1fr;
+  }
+}
